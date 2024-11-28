@@ -91,7 +91,7 @@ export default {
   </main>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   main {
     padding-top: 40px;
     background-color: var(--color-primary);
@@ -120,10 +120,15 @@ export default {
           color: var(--color-text-inverted);
           font: var(--font-text-md);
           border: none;
+          cursor: pointer;
           border-radius: 8px;
           width: 144px;
           height: 100%;
           background-color: var(--color-green);
+
+          &:hover {
+            opacity: 0.7;
+          }
         }
       }
     }

@@ -35,7 +35,7 @@ export default {
   </form>
 </template>
 
-<style>
+<style lang="scss" scoped>
   form {
     width: 100%;
     label {
@@ -45,13 +45,17 @@ export default {
       font-weight: bold;
       text-transform: uppercase;
       letter-spacing: 1px;
+      font: var(--font-text-sm);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 4px;
     }
     input {
       padding: 6px;
       border: 2px solid #dddddd;
       width: 100%;
       box-sizing: border-box;
-
+      margin-bottom: 12px;
     }
     textarea {
       padding: 10px;

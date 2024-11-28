@@ -1,15 +1,3 @@
-<template>
-  <li class="add-todo-container ">
-    <TodoForm
-      :isLoading="isLoading"
-      @onSubmit="onSubmit"
-      @onCancel="onCancel"
-      :submitButtonText=submitButtonText
-      :formData="formProps"
-    />
-  </li>
-</template>
-
 <script lang="ts">
 import TodoForm from '@/entities/Todos/TodoForm/TodoForm.vue'
 
@@ -60,7 +48,19 @@ export default {
 };
 </script>
 
-<style>
+<template>
+  <li class="add-todo-container ">
+    <TodoForm
+      :isLoading="isLoading"
+      @onSubmit="onSubmit"
+      @onCancel="onCancel"
+      :submitButtonText=submitButtonText
+      :formData="formProps"
+    />
+  </li>
+</template>
+
+<style lang="scss" scoped>
 .add-todo-container {
   border-radius: 12px;
   list-style-type: none;

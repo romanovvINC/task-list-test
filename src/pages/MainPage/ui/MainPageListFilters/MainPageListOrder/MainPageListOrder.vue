@@ -28,7 +28,7 @@ export default {
       v-bind:fetchTodos="fetchTodos"
       v-on:input="changeIpnut"
       id="search-input"
-      >
+    >
       <option value="desc">descending</option>
       <option value="asc">ascending</option>
     </select>
@@ -37,7 +37,7 @@ export default {
 
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .order-select-container {
   position: relative;
   width: 144px;
@@ -49,8 +49,10 @@ export default {
     position: relative;
     height: 100%;
     width: 100%;
+    font: var(--font-text-sm);
+    font-weight: 600;
     box-sizing: border-box;
-    padding: 8px 0 0 12px;
+    padding: 12px 0 0 12px;
     background: var(--color-primary);
     border-radius: 8px;
     border: 2px solid var(--color-green);

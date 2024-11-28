@@ -18,13 +18,13 @@ export default {
 
 <template>
   <div class="main-page-list-filters">
-      <MainPageListSearch @updateTodos="updateTodos" />
+    <MainPageListSearch @updateTodos="updateTodos" />
     <MainPageListSort @updateTodos="updateTodos" />
-      <MainPageListOrder @updateTodos="updateTodos" />
+    <MainPageListOrder @updateTodos="updateTodos" />
   </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
   .main-page-list-filters {
     display: flex;
     justify-content: right;

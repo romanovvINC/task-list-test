@@ -97,7 +97,7 @@ export default {
   />
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .todo-item {
   width: 100%;
   height: 100%;
@@ -194,10 +194,11 @@ export default {
     .edit-button {
       cursor: pointer;
       transition: .1s;
+      border: none;
+      background: transparent;
       height: 100%;
       .icon {
         fill: var(--color-grey);
-
       }
       &:hover {
         opacity: .5;

@@ -23,13 +23,15 @@
   <input placeholder="search..." type="search" class="main-page-list-search" v-bind:value="inputValue" v-bind:fetchTodos="fetchTodos" v-on:input="changeIpnut" id="search-input">
 </template>
 
-<style  lang="scss">
+<style lang="scss" scoped>
   .main-page-list-search {
     all: unset;
     box-sizing: border-box;
+    font: var(--font-text-sm);
+    font-weight: 600;
     border: 2px solid var(--color-green);
     padding: 0 0 4px 16px;
     height: 48px;
-    font-size: 20px;
+    font-size: 18px;
   }
 </style>

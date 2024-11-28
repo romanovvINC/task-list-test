@@ -1,14 +1,14 @@
-<template>
-  <div class="custom-loader" />
-</template>
-
 <script lang="ts">
   export default {
     name: "SpinnerCircle",
   }
 </script>
 
-<style lang="scss">
+<template>
+  <div class="custom-loader" />
+</template>
+
+<style lang="scss" scoped>
 .custom-loader {
   width: 32px;
   height: 32px;

@@ -27,7 +27,7 @@ export default {
   </li>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @mixin background-gradient {
   background-image: linear-gradient(90deg, #ddd 0px, #e8e8e8 40px, #ddd 80px);
   background-size: 600px;

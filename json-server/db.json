@@ -4,7 +4,7 @@
       "title": "Get boost",
       "details": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tortor velit, tincidunt in neque ut, accumsan accumsan turpis. Proin vehicula est eu dapibus cursus. Donec tristique augue vel mattis fermentum. Cras lacinia augue ac luctus elementum. Curabitur et lorem eu lectus accumsan porttitor. Suspendisse ac faucibus felis. Pellentesque magna odio.",
       "id": 1,
-      "complete": false,
+      "complete": true,
       "date": "2024-10-01T15:20:00.000Z"
     },
     {
