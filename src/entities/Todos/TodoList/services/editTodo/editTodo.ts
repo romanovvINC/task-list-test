@@ -2,7 +2,6 @@ import { $api } from '@/shared/api/api'
 import type { EditFormType } from '../../../TodoItem/model/types/todoItem';
 
 export const fetchEditTodo = async (formData: EditFormType, id: number) => {
-  console.log(formData);
   try {
     const response = await $api.patch(`/todos/${id}`, formData);
     if (!response.data) {

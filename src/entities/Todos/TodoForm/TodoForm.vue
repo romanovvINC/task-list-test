@@ -6,7 +6,6 @@ export default {
   components: { SpinnerCircle },
   props: ["submitButtonText", "isLoading", "formData"],
   data() {
-    console.log(this.title);
    return {
      form: {
        title: this.formData.title,

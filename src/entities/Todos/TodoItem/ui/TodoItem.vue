@@ -12,7 +12,6 @@ export default {
   components: { TodoItemForm, EditIcon, DeleteIcon },
   props: ["todo", "isLoading", "editFormId"],
   data() {
-    console.log(this.todo.id)
     return {
       showDetails: false,
       urlThis: "http://localhost:8000/todos/" + this.todo.id,
@@ -44,10 +43,8 @@ export default {
       }).finally(() =>this.isFormLoading = false);
     },
     onEditSubmit(newData: EditFormType) {
-      console.log('lol')
       this.setIsFormLoading(true);
       fetchEditTodo(newData, this.todo.id).then(() => {
-        console.log('success');
         this.setIsFormLoading(false);
         this.$emit("fetchTodos", {})
         this.$emit('setEditFormId', null);
@@ -60,7 +57,6 @@ export default {
     }),
     updateCompleteTodo() {
       this.debouncedUpdateCompleteTodo(!this.todo.complete, this.todo.id)
-        .then(() => console.log('complete'))
         .catch((err) => console.log(err.name));
     },
   },

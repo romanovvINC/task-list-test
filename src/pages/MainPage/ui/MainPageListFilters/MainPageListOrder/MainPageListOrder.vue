@@ -14,7 +14,6 @@ export default {
       const target = (<HTMLInputElement>event.target);
       this.inputValue = target.value;
       this.fetchTodos();
-      console.log(this.fetchTodos);
     }
   }
 }

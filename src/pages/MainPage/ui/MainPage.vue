@@ -39,7 +39,6 @@ export default {
       this.isCreateFormVisible = !this.isCreateFormVisible;
     },
     fetchTodos(props?: FetchArticlesListProps) {
-      console.log('fetch todos');
       this.isTodosLoading = true;
       fetchTodoListDebounced(props ? props : {}).then((data) => {
         this.isTodosLoading = false;
