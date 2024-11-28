@@ -1,6 +1,30 @@
 @font-face {
+  font-family: Heebo;
+  src: url('./Heebo-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: url('./Heebo-Medium.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Heebo;
+  src: url('./Heebo-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
   font-family: jost;
-  src: url('../../../shared/lib/fonts/Heebo/Heebo-Bold.woff2') format('woff2');
+  src: url('~@/shared/lib/fonts/Jost/Jost-Regular.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
   font-weight: 400;
@@ -8,7 +32,7 @@
 
 @font-face {
   font-family: jost;
-  src: url('../../../shared/lib/fonts/Heebo/Heebo-Bold.woff2') format('woff2');
+  src: url('../../../shared/lib/fonts/Jost/Jost-Medium.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
   font-weight: 500;
@@ -16,8 +40,17 @@
 
 @font-face {
   font-family: jost;
-  src: url('../../../shared/lib/fonts/Heebo/Heebo-Bold.woff2') format('woff2');
+  src: url('../../../shared/lib/fonts/Jost/Jost-SemiBold.woff2') format('woff2');
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: jost;
+  src: url('../../../shared/lib/fonts/Jost/Jost-Bold.woff2') format('woff2');
   font-style: normal;
   font-display: swap;
   font-weight: 700;
 }
+

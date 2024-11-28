@@ -1,0 +1,41 @@
+@use "../fonts/fonts.scss";
+
+:root {
+  /* colors */
+  --color-white: #f3f3f3;
+  --color-white-bg: #e9eeea;
+  --color-white-inverted: #161716;
+  --color-green: #00bb7c;
+  --color-grey-dark: #4a4d4a;
+  --color-grey: #6f736f;
+
+
+  /* theme variables */
+
+  --color-primary: var(--color-white);
+  --color-text: var(--color-white-inverted);;
+  --color-text-inverted: var(--color-white);
+  --color-text-crossed: var(--color-grey);
+  --color-secondary: var(--color-green);
+  --color-card-bg: var(--color-white-bg);
+  --color-icon: var(--color-grey-dark);
+
+  /* fonts */
+  --font-text-xl: normal normal 700 48px/56px Arial;
+  --font-text-md: normal normal 500 24px/28px Arial;
+  --font-text-sm: normal normal 400 16px/20px Arial;
+
+  /* sizes */
+
+  --width-desktop: 1024px;
+
+  /* animations */
+
+  --duration-about-list: 0.8s;
+
+}
+
+
+
+
+

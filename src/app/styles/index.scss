@@ -1,5 +1,8 @@
-@use './variables/global.scss';
-@use "./fonts.scss";
+@use "./fonts/fonts.scss";
+@use "./variables/global";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 $desktop-width: 1440px;
 $tablet-width: 768px;
@@ -77,20 +80,31 @@ html {
 
 body {
   min-height: 100%;
-  overflow: hidden;
+  overflow: auto;
   line-height: 1.5;
   background-color: var(--color-grey-bg);
   margin: 0;
   padding: 0;
 
   p, h1, h2, h3, h4, h5, h6 {
-    font-family: Jost, serif;
     font-weight: 400;
-    color: var(--color-white);
+    color: var(--color-black);
   }
 
   h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05rem;
+  }
+
+  h1 {
+    font: var(--font-text-xl);
+  }
+
+  h4 {
+    font: var(--font-text-md)
+  }
+
+  p {
+    font: var(--font-text-sm)
   }
 }
 
